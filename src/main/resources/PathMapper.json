@@ -1,0 +1,22 @@
+[
+	{
+		"name": "CE1.0CF",
+		"path": "E:/config/CE/1.0",
+		"version": "CE1.0"
+	},
+	{
+		"name": "CE2.0CF",
+		"path": "E:/config/CE/2.0",
+		"version": "CE2.0"
+	},
+	{
+		"name": "EE1.0CF",
+		"path": "E:/config/EE/1.0",
+		"version": "EE1.0"
+	},
+	{
+		"name": "EE2.0CF",
+		"path": "E:/config/EE/2.0",
+		"version": "EE2.0"
+	}
+]

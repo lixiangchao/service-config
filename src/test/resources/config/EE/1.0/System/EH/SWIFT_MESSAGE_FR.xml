@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>    
+<root>
+    <record>
+        <code>1002</code>
+        <level>W</level>
+        <msg>The current message broker listener will stop right now!</msg>
+        <action>If you want to stop the message broker listener, please click the 'Yes' button, if not, please click the 'No' button.</action>
+    </record>
+	<record>
+		<code>1003</code>
+		<level>W</level>
+		<msg>The SWIFT message %s has been sent by other %s Transaction!</msg>
+		<action>The message has been sent by other transaction.</action>
+	</record>
+	<record>
+		<code>1004</code>
+		<level>W</level>
+		<msg>Can't Pick Out Any Record in Auto-Process.</msg>
+		<action>There is no records meet a query criterion in Auto-Process, please re-set the query criterion.</action>
+	</record>
+	<record>
+		<code>1005</code>
+		<level>W</level>
+		<msg>Archiving %s begins!</msg>
+		<action>It informs that archiving data begins</action>
+	</record>
+	<record>
+		<code>1006</code>
+		<level>W</level>
+		<msg>Archiving data %s ends!</msg>
+		<action>It informs that archiving data is end</action>
+	</record>
+	<record>
+		<code>1007</code>
+		<level>W</level>
+		<msg>Auto-Process of copy transaction %s complete!</msg>
+		<action>It informs that copy transaction is done successfully.</action>
+	</record>
+	<record>
+		<code>1008</code>
+		<level>W</level>
+		<msg>This rate is involved in other transactions. It can't be deleted!</msg>
+		<action>This rate is used in the transaction, so you can't delete it.</action>
+	</record>
+	<record>
+		<code>1009</code>
+		<level>W</level>
+		<msg>Sorry, There is a set of Swift Message that they have not been entirely received!</msg>
+		<action>Please wait.</action>
+	</record>
+	<record>
+		<code>1010</code>
+		<level>W</level>
+		<msg>The value of 27 tag is not valid</msg>
+		<action>Please check the value of 27 tag to make sure this swift message is correct please!</action>
+	</record>
+</root>
