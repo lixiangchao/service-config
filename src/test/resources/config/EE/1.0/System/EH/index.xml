@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<service name="WEB" enable="true" file="WEB_MESSAGE">
-		<lang>FR</lang>
-		<lang default="true">EN</lang>
-		<lang>CN</lang>
-	</service>
-	<service name="SWIFT" enable="true" file="SWIFT_MESSAGE">
-		<lang>FR</lang>
-		<lang default="true">EN</lang>
-		<lang>CN</lang>
-	</service>
-	<service name="BATCH" enable="false" file="BATCH_MESSAGE">
-		<lang>FR</lang>
-		<lang>CN</lang>
-		<lang default="true">EN</lang>
-	</service>
-	<service name="SYSTEM" file="SYSTEM_MESSAGE">
-		<lang default="true">EN</lang>
-		<lang>CN</lang>
-	</service>
+    <service name="WEB" enable="true" file="WEB_MESSAGE">
+        <lang>FR</lang>
+        <lang default="true">EN</lang>
+        <lang>CN</lang>
+    </service>
+    <service name="SWIFT" enable="true" file="SWIFT_MESSAGE">
+        <lang>FR</lang>
+        <lang default="true">EN</lang>
+        <lang>CN</lang>
+    </service>
+    <service name="BATCH" enable="false" file="BATCH_MESSAGE">
+        <lang>FR</lang>
+        <lang>CN</lang>
+        <lang default="true">EN</lang>
+    </service>
+    <service name="SYSTEM" file="SYSTEM_MESSAGE">
+        <lang default="true">EN</lang>
+        <lang>CN</lang>
+    </service>
 </root>
