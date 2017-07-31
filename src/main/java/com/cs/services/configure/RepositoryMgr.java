@@ -39,7 +39,7 @@ public class RepositoryMgr {
             if (StringUtils.isEmpty(repPath)) {
                 repPath = "repository";
             }
-            for (Element e : XMLUtils.findElements(XMLUtils.findElement(root, "branchs", false), "branch", false)) {
+            for (Element e : XMLUtils.findChildrenElements(XMLUtils.findElement(root, "branchs", false), "branch")) {
                 String name = e.getAttribute("name");
                 map.put(name, new File(repPath, name));
             }
