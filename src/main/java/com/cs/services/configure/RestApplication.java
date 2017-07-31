@@ -10,6 +10,10 @@ import javax.ws.rs.core.Application;
 @ApplicationPath("/api")
 public class RestApplication extends Application {
 
+    public RestApplication() {
+        RepositoryMgr.initConfigure();
+    }
+
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> set = new HashSet<>();

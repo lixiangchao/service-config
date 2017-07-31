@@ -24,12 +24,12 @@ public class RepositoryMgr {
 
     private static Map<String, File> map;
 
-    static {
+    public static void initConfigure() {
         try {
             String path = System.getProperty("user.conf");
             File br;
             if (Objects.isNull(path)) {
-                br = new File("conf", "repository.xml");
+                br = new File("/conf", "repository.xml");
             } else {
                 br = new File(path, "repository.xml");
             }
