@@ -6,7 +6,7 @@
 package com.cs.services.configure;
 
 import com.cs.commons.lang.StringUtils;
-import com.cs.commons.lang.XMLUtils;
+import com.cs.commons.lang.doc.XMLUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
