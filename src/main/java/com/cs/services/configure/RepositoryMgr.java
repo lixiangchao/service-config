@@ -43,9 +43,10 @@ public class RepositoryMgr {
             map = new HashMap<>();
             String repPath = XMLUtils.findTrimValue(root, "localRepository", false);
             if (StringUtils.isBlank(repPath)) {
-                repPath = "repository";
+                repFolder = new File(path, "repository");
+            } else {
+                repFolder = new File(repPath);
             }
-            repFolder = new File(repPath);
             commonsFolder = new File(repFolder, "commons");
             for (Element e : XMLUtils.findChildrenElements(XMLUtils.findElement(root, "branchs", false), "branch")) {
                 String name = e.getAttribute("name");
