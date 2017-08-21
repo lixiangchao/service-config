@@ -50,7 +50,7 @@ public class RepositoryMgr {
             commonsFolder = new File(repFolder, "commons");
             for (Element e : XMLUtils.findChildrenElements(XMLUtils.findElement(root, "branchs", false), "branch")) {
                 String name = e.getAttribute("name");
-                map.put(name, new File(repPath, name));
+                map.put(name, new File(repFolder, name));
             }
         } catch (IOException | ParserConfigurationException | SAXException ex) {
             LogMgr.getSystem().write(new EHException(ex, ErrorHandling.getErrorInfo(EHSystem.NAME, EHSystem.CODE_ST000003, setFile.getPath())));
