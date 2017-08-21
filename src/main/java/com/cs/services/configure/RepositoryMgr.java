@@ -35,9 +35,11 @@ public class RepositoryMgr {
         String path = System.getProperty("user.conf");
         File setFile;
         if (Objects.isNull(path)) {
-            path = context.getRealPath("conf");
+            path = context.getRealPath(".");
+            setFile = new File(path, "conf/setting.xml");
+        } else {
+            setFile = new File(path, "setting.xml");
         }
-        setFile = new File(path, "setting.xml");
         try {
             Element root = XMLUtils.parser(setFile).getDocumentElement();
             map = new HashMap<>();
