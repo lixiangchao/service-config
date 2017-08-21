@@ -5,6 +5,7 @@
  */
 package com.cs.services.configure.api;
 
+import com.cs.commons.lang.StringUtils;
 import com.cs.services.configure.RepositoryMgr;
 import java.io.File;
 import java.util.LinkedHashMap;
@@ -24,18 +25,18 @@ import javax.ws.rs.core.Response;
  */
 @Path("/resources")
 public class Resources {
-
+    
     @GET
     @Path("/get")
     @Produces(MediaType.APPLICATION_OCTET_STREAM)
     public Response get(@QueryParam("branch") String branch, @QueryParam("path") String path) {
-        File file = new File(RepositoryMgr.getBranchFolder(branch), path);
+        File file = StringUtils.isBlank(branch) ? new File(RepositoryMgr.getCommonsFolder(), path) : new File(RepositoryMgr.getBranchFolder(branch), path);
         if (!file.exists()) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         return Response.ok(file).build();
     }
-
+    
     @GET
     @Path("/listFiles")
     @Produces(MediaType.APPLICATION_JSON)

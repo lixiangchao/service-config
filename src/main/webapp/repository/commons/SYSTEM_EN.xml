@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>    
+<root>
+    <info>
+        <code>000000</code>
+        <level>E</level>
+        <msg>Load Failed! File: %s</msg>
+        <action></action>
+    </info>
+</root>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <localRepository>d:/</localRepository>
+    <!--<localRepository>d:/</localRepository>-->
     <branchs>
         <branch name="eLoan"/>
-    </branchs>
+    <!--</branchs>-->
 </root>
