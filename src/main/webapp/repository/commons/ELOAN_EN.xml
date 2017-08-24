@@ -1,57 +1,525 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>    
+<?xml version="1.0" encoding="UTF-8"?>    
 <root>
     <info>
-        <code>1002</code>
-        <level>W</level>
-        <msg>The current message broker listener will stop right now!</msg>
-        <action>If you want to stop the message broker listener, please click the 'Yes' button, if not, please click the 'No' button.</action>
+        <code>IA200001</code>
+        <level>E</level>
+        <msg>This transaction: %s is existed already!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1003</code>
-        <level>W</level>
-        <msg>The SWIFT message %s has been sent by other %s Transaction!</msg>
-        <action>The message has been sent by other transaction.</action>
+        <code>IA200002</code>
+        <level>E</level>
+        <msg>This transaction: %s is not existed!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1004</code>
-        <level>W</level>
-        <msg>Can't Pick Out Any Record in Auto-Process.</msg>
-        <action>There is no infos meet a query criterion in Auto-Process, please re-set the query criterion.</action>
+        <code>IA200003</code>
+        <level>E</level>
+        <msg>This transaction: %s This Take Down is rollbacked!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1005</code>
-        <level>W</level>
-        <msg>Archiving %s begins!</msg>
-        <action>It informs that archiving data begins</action>
+        <code>IA200004</code>
+        <level>E</level>
+        <msg>This transaction: %s is Converted Accrue already!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1006</code>
-        <level>W</level>
-        <msg>Archiving data %s ends!</msg>
-        <action>It informs that archiving data is end</action>
+        <code>IA200005</code>
+        <level>E</level>
+        <msg>This transaction: %s is archieved already!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1007</code>
-        <level>W</level>
-        <msg>Auto-Process of copy transaction %s complete!</msg>
-        <action>It informs that copy transaction is done successfully.</action>
+        <code>IA200006</code>
+        <level>E</level>
+        <msg>This transaction: %s is canceled already!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1008</code>
-        <level>W</level>
-        <msg>This rate is involved in other transactions. It can't be deleted!</msg>
-        <action>This rate is used in the transaction, so you can't delete it.</action>
+        <code>IA200007</code>
+        <level>E</level>
+        <msg>This transaction: %s is not stopped!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1009</code>
-        <level>W</level>
-        <msg>Sorry, There is a set of Swift Message that they have not been entirely received!</msg>
-        <action>Please wait.</action>
+        <code>IA200008</code>
+        <level>E</level>
+        <msg>This transaction: %s is paid off already!</msg>
+        <action></action>
     </info>
     <info>
-        <code>1010</code>
-        <level>W</level>
-        <msg>The value of 27 tag is not valid</msg>
-        <action>Please check the value of 27 tag to make sure this swift message is correct please!</action>
+        <code>IA200009</code>
+        <level>E</level>
+        <msg>This transaction: %s is stopped already!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200010</code>
+        <level>E</level>
+        <msg>This Event: %s is Rollback Event!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200011</code>
+        <level>E</level>
+        <msg>This Event: %s is Rollback already or Inexistent!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200012</code>
+        <level>E</level>
+        <msg>This Event: %s is not last Effective Event!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200013</code>
+        <level>E</level>
+        <msg>This event can't be rollbacked!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200014</code>
+        <level>E</level>
+        <msg>Spread Floating Rate No is invalid.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200015</code>
+        <level>E</level>
+        <msg>Spread Floating Rate is invalid.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200016</code>
+        <level>E</level>
+        <msg>Discount Rate is invalid.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200017</code>
+        <level>E</level>
+        <msg>Discount Rate is null.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200018</code>
+        <level>E</level>
+        <msg>Please choose one of rate types, don't fill them all.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200019</code>
+        <level>E</level>
+        <msg>Please choose one of rate types, either the Fixed Basic Rate or the Floating Basic Rate type.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200020</code>
+        <level>E</level>
+        <msg>Please choose one of rate types, either the Fixed Rate or the Floating Rate type.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200021</code>
+        <level>E</level>
+        <msg>Rate matching format is not correct! Please choose either the Fixed Base Rate or the Floating Base Rate.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200022</code>
+        <level>E</level>
+        <msg>Rate matching format is not correct! Please choose either the Fixed Spread Rate or the Floating Spread Rate.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200023</code>
+        <level>E</level>
+        <msg>Account Type value is empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200024</code>
+        <level>E</level>
+        <msg>Account Type value is same as the current transaction.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200025</code>
+        <level>E</level>
+        <msg>%s doesn't exist in Account Type Table.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200026</code>
+        <level>E</level>
+        <msg>Amendment event master be the lastest event!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200027</code>
+        <level>E</level>
+        <msg>%s  event must be the lastest event!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200028</code>
+        <level>E</level>
+        <msg>Last Coupon Date can not be empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200029</code>
+        <level>E</level>
+        <msg>Base Days cannot be zero or negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200030</code>
+        <level>E</level>
+        <msg>Base Days value is empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200031</code>
+        <level>E</level>
+        <msg>Base Days value is same as the current transaction.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200032</code>
+        <level>E</level>
+        <msg>Base Floating Rate No is invalid.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200033</code>
+        <level>E</level>
+        <msg>Book Transaction Amount can not be empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200034</code>
+        <level>E</level>
+        <msg>Book Transaction Amount should be zero.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200035</code>
+        <level>E</level>
+        <msg>Coupon Frequency Type can not be empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200036</code>
+        <level>E</level>
+        <msg>Unkonwn Frequency Type!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200037</code>
+        <level>E</level>
+        <msg>One of Paid Principal Amount or Paid Interest Amount cannot be zero or empty at least.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200038</code>
+        <level>E</level>
+        <msg>Paid Interest Amount cannot be negative value!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200039</code>
+        <level>E</level>
+        <msg>Paid Interest is more than zero, but new due date is earlier than old due date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200040</code>
+        <level>E</level>
+        <msg>Paid Principal Amount cannot be negative value!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200041</code>
+        <level>E</level>
+        <msg>Currency of Transaction Amount and Currency of Commission/Deferred Interest cannot be empty at the same time.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200042</code>
+        <level>E</level>
+        <msg>Customer Paid Interest/Commission and Equivalence should be all more than zero</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200043</code>
+        <level>E</level>
+        <msg>Customer Paid Interest/Commission should be equal to Equivalence</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200044</code>
+        <level>E</level>
+        <msg>Deferred Base Interest can not more than Deferred Interest</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200045</code>
+        <level>E</level>
+        <msg>Deferred Base Interest/Refund Deferred Base Interest must be zero.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200046</code>
+        <level>E</level>
+        <msg>Deferred Interest/Refund Deferred Interest must be zero.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200047</code>
+        <level>E</level>
+        <msg>Deferred Refund Base Interest can not more than Deferred Refund Interest</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200048</code>
+        <level>E</level>
+        <msg>Refund Base Interest cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200049</code>
+        <level>E</level>
+        <msg>Refund Interest cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200050</code>
+        <level>E</level>
+        <msg>Due Date cannot be before than Transaction Value Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200051</code>
+        <level>E</level>
+        <msg>Extend Evnet, Transaction Refund Base Interest cannot be postive value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200052</code>
+        <level>E</level>
+        <msg>Extend Rate is invalid.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200053</code>
+        <level>E</level>
+        <msg>Extension Event, transaction Refund Interest cannot be postive value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200054</code>
+        <level>E</level>
+        <msg>Extension Transaction Value Date cannot be before than last due date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200055</code>
+        <level>E</level>
+        <msg>Shorten Due Date Evnet, transaction Base Interest cannot be postive value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200056</code>
+        <level>E</level>
+        <msg>Shorten Due Date Evnet, transaction Interest cannot be postive value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200057</code>
+        <level>E</level>
+        <msg>It should not have the events : ReTakedown, Payment which value date is greater than or equal to the reversed transaction value date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200058</code>
+        <level>E</level>
+        <msg>Rollback Event No is empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200059</code>
+        <level>E</level>
+        <msg>Rollback Event No is not exist.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200060</code>
+        <level>E</level>
+        <msg>The reversed value date should be less than or equal tothe Last Posting Date!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200061</code>
+        <level>E</level>
+        <msg>The sum of the Paid Base Interest Amount,Paid Spread Interest Amount and the Paid Penalty Interest Amount should be equal to the Paid Interest Amount.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200062</code>
+        <level>E</level>
+        <msg>Transaction Amount cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200063</code>
+        <level>E</level>
+        <msg>Transaction Amount cannot be zero or negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200064</code>
+        <level>E</level>
+        <msg>Transaction Amount is empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200065</code>
+        <level>E</level>
+        <msg>Transaction Amount must not be more than Outstanding Amount.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200066</code>
+        <level>E</level>
+        <msg>Transaction Interest &amp;&amp; Refund Interest cannot be more than zero at the same time.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200067</code>
+        <level>E</level>
+        <msg>Transaction Interest cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200068</code>
+        <level>E</level>
+        <msg>Transaction Interest cannot be null.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200069</code>
+        <level>E</level>
+        <msg>Transaction Interest cannot be zero or negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200070</code>
+        <level>E</level>
+        <msg>Transaction Base Interest cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200071</code>
+        <level>E</level>
+        <msg>Transaction Refund Base Interest cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200072</code>
+        <level>E</level>
+        <msg>Transaction Refund Interest cannot be negative value.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200073</code>
+        <level>E</level>
+        <msg>Transaction Value Date can not more than first tenor's TO-DATE.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200074</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be after than Due Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200075</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be before than Due Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200076</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be before than Last Coupon Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200077</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be before than Take Down Transaction Value Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200078</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be earlier than the Lastest Interest Paid Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200079</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be earlier than the Takedown Value Date!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200080</code>
+        <level>E</level>
+        <msg>Transaction Value Date cannot be on Due Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200081</code>
+        <level>E</level>
+        <msg>Transaction Value Date is after Due Date. Paid or Refund Interest is not allowed!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200082</code>
+        <level>E</level>
+        <msg>Transaction Value Date is empty!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200083</code>
+        <level>E</level>
+        <msg>Transaction Value Date is on Due Date. Refund Interest is not allowed!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200084</code>
+        <level>E</level>
+        <msg>%s  doesn't be released.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200085</code>
+        <level>E</level>
+        <msg>%s  doesn't exist in Floating Rate Table.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200086</code>
+        <level>E</level>
+        <msg>%s  isn't Base Floating Rate.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200087</code>
+        <level>E</level>
+        <msg>%s  isn't Spread Floating Rate.</msg>
+        <action></action>
     </info>
 </root>
