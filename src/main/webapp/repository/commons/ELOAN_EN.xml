@@ -522,4 +522,22 @@
         <msg>%s  isn't Spread Floating Rate.</msg>
         <action></action>
     </info>
+    <info>
+        <code>IA200088</code>
+        <level>E</level>
+        <msg>Extend Transaction Value Date should equals whith Last Due Date.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200089</code>
+        <level>E</level>
+        <msg>   Extend Rate small than Base Rate and Spread Rate </msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200090</code>
+        <level>E</level>
+        <msg>This event is not available.</msg>
+        <action></action>
+    </info>
 </root>
