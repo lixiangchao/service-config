@@ -231,7 +231,7 @@
     <info>
         <code>IA200039</code>
         <level>E</level>
-        <msg>Paid Interest is more than zero, but new due date is earlier than old due date.</msg>
+        <msg>Paid Interest is more than zero, but new due date is not later than old due date.</msg>
         <action></action>
     </info>
     <info>
@@ -531,13 +531,37 @@
     <info>
         <code>IA200089</code>
         <level>E</level>
-        <msg>   Extend Rate small than Base Rate and Spread Rate </msg>
+        <msg>Extend Rate small than Base Rate and Spread Rate. </msg>
         <action></action>
     </info>
     <info>
         <code>IA200090</code>
         <level>E</level>
         <msg>This event is not available.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200091</code>
+        <level>E</level>
+        <msg>No transaction data.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200092</code>
+        <level>E</level>
+        <msg>From Date %s is not less than To Date %s!</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200093</code>
+        <level>E</level>
+        <msg>Coupon Frequency Type can not be empty.</msg>
+        <action></action>
+    </info>
+    <info>
+        <code>IA200094</code>
+        <level>E</level>
+        <msg>Unkonwn Frequency Type!</msg>
         <action></action>
     </info>
 </root>
