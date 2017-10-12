@@ -3,73 +3,73 @@
     <info>
         <code>IA200001</code>
         <level>E</level>
-        <msg>This transaction: %s is existed already!</msg>
+        <msg>This transaction: %1$s is existed already!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200002</code>
         <level>E</level>
-        <msg>This transaction: %s is not existed!</msg>
+        <msg>This transaction: %1$s is not existed!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200003</code>
         <level>E</level>
-        <msg>This transaction: %s This Take Down is rollbacked!</msg>
+        <msg>This transaction: %1$s This Take Down is rollbacked!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200004</code>
         <level>E</level>
-        <msg>This transaction: %s is Converted Accrue already!</msg>
+        <msg>This transaction: %1$s is Converted Accrue already!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200005</code>
         <level>E</level>
-        <msg>This transaction: %s is archieved already!</msg>
+        <msg>This transaction: %1$s is archieved already!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200006</code>
         <level>E</level>
-        <msg>This transaction: %s is canceled already!</msg>
+        <msg>This transaction: %1$s is canceled already!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200007</code>
         <level>E</level>
-        <msg>This transaction: %s is not stopped!</msg>
+        <msg>This transaction: %1$s is not stopped!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200008</code>
         <level>E</level>
-        <msg>This transaction: %s is paid off already!</msg>
+        <msg>This transaction: %1$s is paid off already!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200009</code>
         <level>E</level>
-        <msg>This transaction: %s is stopped already!</msg>
+        <msg>This transaction: %1$s is stopped already!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200010</code>
         <level>E</level>
-        <msg>This Event: %s is Rollback Event!</msg>
+        <msg>This Event: %1$s is Rollback Event!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200011</code>
         <level>E</level>
-        <msg>This Event: %s is Rollback already or Inexistent!</msg>
+        <msg>This Event: %1$s is Rollback already or Inexistent!</msg>
         <action></action>
     </info>
     <info>
         <code>IA200012</code>
         <level>E</level>
-        <msg>This Event: %s is not last Effective Event!</msg>
+        <msg>This Event: %1$s is not last Effective Event!</msg>
         <action></action>
     </info>
     <info>
@@ -147,7 +147,7 @@
     <info>
         <code>IA200025</code>
         <level>E</level>
-        <msg>%s doesn't exist in Account Type Table.</msg>
+        <msg>%1$s doesn't exist in Account Type Table.</msg>
         <action></action>
     </info>
     <info>
@@ -159,7 +159,7 @@
     <info>
         <code>IA200027</code>
         <level>E</level>
-        <msg>%s  event must be the lastest event!</msg>
+        <msg>%1$s  event must be the lastest event!</msg>
         <action></action>
     </info>
     <info>
@@ -501,25 +501,25 @@
     <info>
         <code>IA200084</code>
         <level>E</level>
-        <msg>%s  doesn't be released.</msg>
+        <msg>%1$s  doesn't be released.</msg>
         <action></action>
     </info>
     <info>
         <code>IA200085</code>
         <level>E</level>
-        <msg>%s  doesn't exist in Floating Rate Table.</msg>
+        <msg>%1$s  doesn't exist in Floating Rate Table.</msg>
         <action></action>
     </info>
     <info>
         <code>IA200086</code>
         <level>E</level>
-        <msg>%s  isn't Base Floating Rate.</msg>
+        <msg>%1$s  isn't Base Floating Rate.</msg>
         <action></action>
     </info>
     <info>
         <code>IA200087</code>
         <level>E</level>
-        <msg>%s  isn't Spread Floating Rate.</msg>
+        <msg>%1$s  isn't Spread Floating Rate.</msg>
         <action></action>
     </info>
     <info>
@@ -549,7 +549,7 @@
     <info>
         <code>IA200092</code>
         <level>E</level>
-        <msg>From Date %s is not less than To Date %s!</msg>
+        <msg>From Date %1$s is not less than To Date %2$s!</msg>
         <action></action>
     </info>
     <info>
