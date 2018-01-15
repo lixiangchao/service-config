@@ -15,10 +15,6 @@ pipeline {
                 ''' 
             }
         }        
-    	stage('Sonar') {
-            steps {
-            }
-        }
         stage('Package') {
             steps {
               sh 'mvn clean package'
