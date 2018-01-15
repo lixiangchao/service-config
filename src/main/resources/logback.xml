@@ -4,7 +4,7 @@
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
     </appender>
     <appender name="SYSTEM" class="ch.qos.logback.core.FileAppender">
-        <file>d:/system.log</file>
+        <file>/opt/system.log</file>
         <encoder>
             <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
         </encoder>
